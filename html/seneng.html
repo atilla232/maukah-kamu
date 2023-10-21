@@ -19,6 +19,8 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/alert/style.css" />
   </head>
   <body>
     <section>
@@ -68,8 +70,8 @@
 
         // Jika pengguna menekan tombol "OK," maka buka WhatsApp
         if (confirmation) {
-          // Buat tautan deep link untuk membuka aplikasi WhatsApp
-          const whatsappLink = `https://wa.me/`;
+          const phoneNumber = "+6289601691571"; // Replace with the desired phone number
+          const waMobileURL = `https://wa.me/${phoneNumber}`;
 
           // Buka tautan WhatsApp dalam jendela baru
           window.open(whatsappLink);
@@ -80,5 +82,7 @@
       const whatsappButton = document.getElementById("mau");
       whatsappButton.addEventListener("click", openWhatsAppWithConfirmation);
     </script>
+
+    <script src="/alert/script.js"></script>
   </body>
 </html>
